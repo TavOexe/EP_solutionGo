@@ -54,5 +54,8 @@ func solveNQueens(n int) [][]string {
 
 }
 func main() {
-	fmt.Println(solveNQueens(4))
+	go nqueen(8, 0, make([]bool, 8), make([]bool, 16), make([]bool, 16), make([]string, 8), &ans)
+	ans := solveNQueens(8)
+	fmt.Println(ans)
+	fmt.Println(Go solveNQueens(4))
 }
